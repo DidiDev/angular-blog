@@ -1,0 +1,18 @@
+
+#entete {
+    display: flex;
+}
+
+h4 {
+    align-items: flex-start;
+    width: 50vw;
+}
+
+span {
+    align-items: flex-end;
+    width: 50vw;
+}
+
+p {
+    width: 100vw;;
+}
