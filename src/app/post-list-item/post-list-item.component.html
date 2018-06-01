@@ -2,10 +2,11 @@
                 'list-group-item-success': love > '0',
                 'list-group-item-danger': love < '0'}" >
 
-  <div id="entete">
-    <h4>{{ itemName }}</h4>
-    <span>{{ lastUpdate | async | date:'short' }}</span>
-  </div>  
+  
+  <h4 style="float: left;">{{ itemName }}</h4>
+  <span style="float: right">{{ lastUpdate | async | date:'short' }}</span>
+  <br><br>
+  
   <p>{{ itemDescription }}</p>
 
   <button class="btn btn-success" 
@@ -14,9 +15,10 @@
   <button class="btn btn-danger" 
           [disabled]="!isAuth"
           (click)="offLove()">Don't love It !</button>
-</li>
 
-<button class="btn btn-danger"
+  <button class="btn btn-danger"
+        style="float: right;"
         [disabled]="!isAuth"
         (click)="supprime()">Supprimer Tout !</button>
 
+</li>
