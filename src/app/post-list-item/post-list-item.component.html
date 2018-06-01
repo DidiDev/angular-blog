@@ -16,3 +16,7 @@
           (click)="offLove()">Don't love It !</button>
 </li>
 
+<button class="btn btn-danger"
+        [disabled]="!isAuth"
+        (click)="supprime()">Supprimer Tout !</button>
+
